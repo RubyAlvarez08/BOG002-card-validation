@@ -315,3 +315,5 @@ Organización del Trabajo:
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
 
 Aqui esta Ruby!!!!
+
+Aqui esta Carol !!
