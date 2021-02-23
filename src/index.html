@@ -2,13 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+  <body id="fondo">
+    <section>
+      <h1>Inmobiliaria C&R</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias itaque recusandae aliquam numquam minima, atque, ea consequatur, minus expedita ipsum eligendi deleniti adipisci. Hic, nobis dolorem qui veritatis inventore at?</p>
+      <img id= "logo" src="https://png.pngtree.com/png-vector/20190307/ourlarge/pngtree-real-estate-logo-png-image_781922.jpg">
+    </section>
+    <aside class="contenedor">
+     <h2>Card Validation</h1>
+      <img id="tarjeta" src="https://image.freepik.com/vector-gratis/ilustracion-tarjeta-credito_53876-25493.jpg">
+    <label  class="datos">Numero de Tarjeta</label>
+    <input id="numCard" type="text">
+    <br>
+    <label class="datos">Fecha de vencimineto</label>
+    <input id="expDate"type="text">
+    <br>
+    <label class="datos">CCV</label>
+    <input id="numCCV" type="text">
+    <br>
+     <button>Validar</button>
+
+
+    </aside>
+  
+    <script src="script.js"></script>
   </body>
 </html>
