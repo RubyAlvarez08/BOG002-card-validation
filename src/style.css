@@ -64,15 +64,11 @@ section{
   margin: 0px;
   width: 30%;
   height: 700px;
-  float: left;
+  float: left; 
   text-align: center;
   padding: 0px;
   position: relative;
   top:100px;
   left: 100px;
 
-}
-
-p{
-  color:aliceblue;
 }
