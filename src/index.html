@@ -7,20 +7,29 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body id="fondo">
-  
     <section>
       <h1>Inmobiliaria C&R</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias itaque recusandae aliquam numquam minima, atque, ea consequatur, minus expedita ipsum eligendi deleniti adipisci. Hic, nobis dolorem qui veritatis inventore at?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias itaque recusandae aliquam numquam minima</p>
       <img id= "logo" src="https://png.pngtree.com/png-vector/20190307/ourlarge/pngtree-real-estate-logo-png-image_781922.jpg">
     </section>
     <aside class="contenedor">
      <h2>Card Validation</h1>
       <img id="tarjeta" src="https://image.freepik.com/vector-gratis/ilustracion-tarjeta-credito_53876-25493.jpg">
     <label  class="datos">Numero de Tarjeta</label>
+<<<<<<< HEAD
     <input id="numCard" type="text" required>
     
     <br>
      <button id='button'>Validar</button>
+=======
+    <input id="numCard" type="text" maxlength="16" autocomplete="off" required><!-- atributo maxlength para Ingresar los digitos permitidos-->
+    <br>
+    <p id="array"></p>
+    
+     <button type="submit" onclick="campoVacio()">Validar</button>
+
+
+>>>>>>> d0551bf1a955bdb65cc367a9527e136174e964e7
     </aside>
   
     <script src="index.js" type="module"></script>

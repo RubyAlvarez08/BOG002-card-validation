@@ -5,6 +5,7 @@ validator.js
 import validator from './validator.js';
 
 console.log(validator);
+<<<<<<< HEAD
 
 
     
@@ -37,3 +38,17 @@ function evaluarSoloNumeros(){ // evalua que solo se ingresen valores numericos
 console.log(valorNumeroTarjeta);
 }
 
+=======
+//Almacenar el numero de la tarjeta ingresado en el input Numero de tarjeta
+const numeroTarjeta = document.getElementById('numCard');
+numeroTarjeta.addEventListener('keyup',evaluarSoloNumeros);
+
+function evaluarSoloNumeros(){
+const valorNumeroTarjeta = numeroTarjeta.value;
+const result = valorNumeroTarjeta.replace(/\D/g, "");
+document.getElementById("numCard").value = result;
+
+console.log(valorNumeroTarjeta);
+
+}
+>>>>>>> d0551bf1a955bdb65cc367a9527e136174e964e7
