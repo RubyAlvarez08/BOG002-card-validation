@@ -3,7 +3,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
  isValid:function(creditCardNumber){
 
   let arrayCreditCardNumber = creditCardNumber.split("").reverse(); //convertir a un array
-     console.log(arrayCreditCardNumber);
+     //console.log(arrayCreditCardNumber);
 
     let arrayFinal = [];
    
@@ -14,42 +14,37 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
      
     for(let i = 0; i < arrayCreditCardNumber.length; i++){  
      
-      if((i % 2) == 1){
-          impares = arrayCreditCardNumber[i]*2;
-          //console.log(pares)
-          if(impares > 9){
-            impares = (impares-10)+1;
-            //console.log(pares);
-          }
-         // console.log(pares);
-          arrayFinal.push(impares);
+      if((i % 2) == 0){
+          pares = arrayCreditCardNumber[i];
+          pares = parseInt(pares);
+          
+           //console.log(pares);
+          arrayFinal.push(pares);
       }
       else{
-        pares = arrayCreditCardNumber[i];
-        pares = parseInt(pares);
-    // console.log(impares);
-        arrayFinal.push(pares);
-      }
-    
+        impares = arrayCreditCardNumber[i]*2;
+          if(impares > 9){
+            impares = (impares-10)+1;
+          }
+             //console.log(impares);
+             arrayFinal.push(impares);
+       }
     }
-      console.log(arrayFinal);
-        
+
+       // console.log(arrayFinal);
       for (let j = 0; j < arrayFinal.length; j++){
            suma = suma + arrayFinal[j];
+           
+           }
+          // console.log(suma);
+
            if (suma %10 == 0){
-            return true;
-          }
-           else { 
-             return false;
-          }
+              return true;
+            }
+            else { 
+              return false;
+            }
 
-      }
-      console.log(suma);
-
-    //SUMA DE LOS ELEMENTOS DEL ARRAY
-       // SI SUMA % 10 = 0    return true
-
-       // sino return false
          
     
     
