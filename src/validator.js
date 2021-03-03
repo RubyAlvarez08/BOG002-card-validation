@@ -9,30 +9,42 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
    
     let pares = [];
     let impares =[];
+    let suma = 0;
     
      
     for(let i = 0; i < arrayCreditCardNumber.length; i++){  
      
       if((i % 2) == 1){
-          pares = arrayCreditCardNumber[i]*2;
+          impares = arrayCreditCardNumber[i]*2;
           //console.log(pares)
-          if(pares > 9){
-            pares = (pares-10)+1;
+          if(impares > 9){
+            impares = (impares-10)+1;
             //console.log(pares);
           }
          // console.log(pares);
-          arrayFinal.push(pares);
+          arrayFinal.push(impares);
       }
       else{
-        impares = arrayCreditCardNumber[i];
-        impares = parseInt(impares);
+        pares = arrayCreditCardNumber[i];
+        pares = parseInt(pares);
     // console.log(impares);
-        arrayFinal.push(impares);
+        arrayFinal.push(pares);
       }
     
     }
       console.log(arrayFinal);
-       //UNIR ARRAY PARES E IMPARES
+        
+      for (let j = 0; j < arrayFinal.length; j++){
+           suma = suma + arrayFinal[j];
+           if (suma %10 == 0){
+            return true;
+          }
+           else { 
+             return false;
+          }
+
+      }
+      console.log(suma);
 
     //SUMA DE LOS ELEMENTOS DEL ARRAY
        // SI SUMA % 10 = 0    return true
