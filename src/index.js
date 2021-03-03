@@ -4,39 +4,33 @@ validator.js
  */
 import validator from './validator.js';
 
-console.log(validator);
 
 
 
+     
     
-      const submitNumCard = document.getElementById('button');
-      submitNumCard.addEventListener('click',validarCantidadDeDigitos);
+    
+     const submitNumCard = document.getElementById('button');
+      submitNumCard.addEventListener('click',getInput);
       
-function validarCantidadDeDigitos(){ // El formulario no se envia si no cumple con las sgtes condiciones
-    const numeroTarjeta = document.getElementById('numCard').value;
+     function getInput(){ // El formulario no se envia si cumple con las sgtes condiciones
+      const creditCardNumber = document.getElementById('numCard').value;
 
-    if(numeroTarjeta == ""){ // aqui evaluamos si el campo esta vacio
+      if(creditCardNumber == ""){ // aqui evaluamos si el campo esta vacio
         alert('Este campo es obligatorio');
-        return false;
+    
     }
-    else if(numeroTarjeta.length > 16){ // aqui validamos el rango de digitos ingresados
-        alert('Verifique la cantidad de digitos ingresados');
-        return false;
+      else if((creditCardNumber.length > 16) || (/\D/.test(creditCardNumber))){ // aqui validamos el rango de digitos ingresados y si los digitos ingresados son diferentes a numeros 
+        alert('Verifique la información ingresada');
+        
     }
-    else 
-    return true;
+    console.log(validator.isValid(creditCardNumber));
+    //console.log(validator.maskify(creditCardNumber));
   
 }
-        const valorInput = document.getElementById('numCard');
-        valorInput.addEventListener('keyup',evaluarSoloNumeros)
-      
-function evaluarSoloNumeros(){ // evalua que solo se ingresen valores numericos
-  const valorNumeroTarjeta = valorInput.value; //Almacena el valor en el input numero de Tarjeta
-  const expRegul = valorNumeroTarjeta.replace(/\D/g, ""); // condicionamos al usuario a solo ingresar numeros y en caso de que ingrese otro caracter no numerico sea remplazado con un espacio
-  document.getElementById("numCard").value = expRegul;
 
-console.log(valorNumeroTarjeta);
-}
+
+
 
 
 
