@@ -5,10 +5,6 @@ validator.js
 import validator from './validator.js';
 
 
-
-
-     
-  
     
      const submitNumCard = document.getElementById('button');
       submitNumCard.addEventListener('click',getInput);
@@ -20,14 +16,16 @@ import validator from './validator.js';
         alert('Este campo es obligatorio');
     
     }
+
       else if((creditCardNumber.length > 16) || (/\D/.test(creditCardNumber))){ // aqui validamos el rango de digitos ingresados y si los digitos ingresados son diferentes a numeros 
         alert('Verifique la información ingresada');
         
     }
     console.log(validator.isValid(creditCardNumber));
-    //console.log(validator.maskify(creditCardNumber));
+    console.log(validator.maskify(creditCardNumber));
   
 }
+
 
 
 

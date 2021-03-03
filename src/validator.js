@@ -6,28 +6,39 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
      console.log(arrayCreditCardNumber);
 
     let arrayFinal = [];
+   
     let pares = [];
-    let impares = [];
+    let impares =[];
     
      
     for(let i = 0; i < arrayCreditCardNumber.length; i++){  
      
       if((i % 2) == 1){
-        pares = arrayCreditCardNumber[i]*2;
-        if(pares > 9){
-         pares = (i % 10);
-         console.log(pares);
-        }
+          pares = arrayCreditCardNumber[i]*2;
+          //console.log(pares)
+          if(pares > 9){
+            pares = (pares-10)+1;
+            //console.log(pares);
+          }
+         // console.log(pares);
+          arrayFinal.push(pares);
       }
       else{
-       impares = arrayCreditCardNumber[i];
-      //console.log(impares);
+        impares = arrayCreditCardNumber[i];
+        impares = parseInt(impares);
+    // console.log(impares);
+        arrayFinal.push(impares);
       }
-       //const otroArray = arrayFinal.concat(pares,impares);
-      //console.log(otroArray);
+    
     }
-      
-   
+      console.log(arrayFinal);
+       //UNIR ARRAY PARES E IMPARES
+
+    //SUMA DE LOS ELEMENTOS DEL ARRAY
+       // SI SUMA % 10 = 0    return true
+
+       // sino return false
+         
     
     
   },
@@ -44,8 +55,3 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
  
 export default validator; // export por default significa que se exporta automaticamente 
    
-
-
- 
-
-
