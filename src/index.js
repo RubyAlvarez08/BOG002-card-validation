@@ -8,7 +8,7 @@ import validator from './validator.js';
 
 
      
-    
+  
     
      const submitNumCard = document.getElementById('button');
       submitNumCard.addEventListener('click',getInput);
