@@ -10,20 +10,26 @@
     <section>
       <h1>Inmobiliaria C&R</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias itaque recusandae aliquam numquam minima</p>
-      <img id= "logo" src="https://png.pngtree.com/png-vector/20190307/ourlarge/pngtree-real-estate-logo-png-image_781922.jpg">
+      
     </section>
     <aside class="contenedor">
-     <h2>Card Validation</h1>
-      <img id="tarjeta" src="https://image.freepik.com/vector-gratis/ilustracion-tarjeta-credito_53876-25493.jpg">
-    <label  class="datos">Numero de Tarjeta</label>
-
-    <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero Tarjeta" pattern="/\d/" required>
-    
+      <form class="card-validation">
+        <legend>Agregar tarjeta</legend>
+          
+    <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta" required>
+    <input name="date"  type="text" placeholder="Fecha de vencimiento">
+    <input name="codigo" type="text" placeholder="CCV">
     <br>
-      
      <button type="submit" id='button' >Validar</button>
-
+     
+     </form>
     </aside>
+    <!--<div class="card-validation contenedor none">
+      <p>La información de su tarjeta ha sido verificada</p>
+      <button>Pagar</button>
+      <button>Regresar</button>
+    </div> -->
+    <footer> Card Validation by Carol Marulanda & Ruby Álvarez</footer>
   
   <script src="index.js" type="module"></script>
 
