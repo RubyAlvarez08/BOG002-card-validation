@@ -12,23 +12,26 @@
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias itaque recusandae aliquam numquam minima</p>
       
     </section>
-    <aside class="contenedor">
-      <form class="card-validation">
+    <aside class="contenedor" id="formulario">
+      <form class="card-validation" >
         <legend>Agregar tarjeta</legend>
           
-    <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta" required>
-    <input name="date"  type="text" placeholder="Fecha de vencimiento">
-    <input name="codigo" type="text" placeholder="CCV">
-    <br>
-     <button type="submit" id='button' >Validar</button>
+        <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
+        <input name="date"  type="text" placeholder="Fecha de vencimiento">
+        <input name="codigo" type="text" placeholder="CCV">
+        <br>
+        <p id ="isn'tValid"></p>
+      
+        <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
      
      </form>
     </aside>
-    <!--<div class="card-validation contenedor none">
-      <p>La información de su tarjeta ha sido verificada</p>
-      <button>Pagar</button>
-      <button>Regresar</button>
-    </div> -->
+
+    <div class="valid-card" id="tarjeta-valida"  >
+     <p id="isValid"> </p>
+     <button><a href="#formulario">Regresar</a></div></button>
+    </div>
+    
     <footer> Card Validation by Carol Marulanda & Ruby Álvarez</footer>
   
   <script src="index.js" type="module"></script>

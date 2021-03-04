@@ -2,7 +2,8 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
 
  isValid:function(creditCardNumber){
 
-  let arrayCreditCardNumber = creditCardNumber.split("").reverse(); //convertir a un array
+
+  const arrayCreditCardNumber = creditCardNumber.split("").reverse(); //convertir a un array
      //console.log(arrayCreditCardNumber);
 
     let arrayFinal = [];

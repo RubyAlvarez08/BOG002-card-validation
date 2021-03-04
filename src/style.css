@@ -12,8 +12,7 @@ body:before{
   width: 100%;
   min-height: 100vh;
   position: fixed;
-  
-  background-image: linear-gradient(to bottom, #051937, #004767, #00797f, #40aa7d, #b5d373););
+ background-image: linear-gradient(to bottom, #051937, #004767, #00797f, #40aa7d, #b5d373);
   opacity: 0.8;
   z-index: -1;
 
@@ -84,3 +83,21 @@ section{
   display: none;
 }
 
+.valid-card{
+  margin: 0px;
+  width: 30%;
+  height: 70%;
+  float: right;
+  background-color: tomato;
+  padding: 0px;
+  position: relative;
+  top: 50px;
+  right: 100px;
+  
+}
+#formulario{
+ display: block;
+}
+#tarjeta-valida{
+  display: none;
+}
