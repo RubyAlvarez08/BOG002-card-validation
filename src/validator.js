@@ -14,7 +14,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
      
     for(let i = 0; i < arrayCreditCardNumber.length; i++){  
      
-      if((i % 2) == 1){
+      if((i % 2) == 0){
           impares = arrayCreditCardNumber[i]*2;
           //console.log(pares)
           if(impares > 9){
