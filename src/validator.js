@@ -15,6 +15,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
     for(let i = 0; i < arrayCreditCardNumber.length; i++){  
      
       if((i % 2) == 0){
+
           pares = arrayCreditCardNumber[i];
           pares = parseInt(pares);
           
@@ -23,6 +24,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
       }
       else{
         impares = arrayCreditCardNumber[i]*2;
+
           if(impares > 9){
             impares = (impares-10)+1;
           }
@@ -53,7 +55,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
   maskify:function(creditCardNumber){ 
   
     const lastDigit = creditCardNumber.substring(creditCardNumber.length -4, creditCardNumber.length);
-    const firstDigit = creditCardNumber.slice(0,creditCardNumber.length -4).replace(/[0-9]/g,'#');
+    const firstDigit = creditCardNumber.slice(0,creditCardNumber.length -4).replace(/[A-Za-z0-9]/g,'#');
     const hiddenCard = firstDigit + lastDigit;
     return hiddenCard;
   } 
