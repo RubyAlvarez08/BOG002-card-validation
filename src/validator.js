@@ -55,7 +55,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
   maskify:function(creditCardNumber){ 
   
     const lastDigit = creditCardNumber.substring(creditCardNumber.length -4, creditCardNumber.length);
-    const firstDigit = creditCardNumber.slice(0,creditCardNumber.length -4).replace(/[0-9]/g,'#');
+    const firstDigit = creditCardNumber.slice(0,creditCardNumber.length -4).replace(/[A-Za-z0-9]/g,'#');
     const hiddenCard = firstDigit + lastDigit;
     return hiddenCard;
   } 
