@@ -5,34 +5,76 @@
     <meta name="viewport" content="width=device-width">
     <title>Card Validation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body id="fondo">
-    <section>
-      <h1>Inmobiliaria C&R</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias itaque recusandae aliquam numquam minima</p>
-      
-    </section>
-    <aside class="contenedor" id="formulario">
-      <form class="card-validation" >
-        <legend>Agregar tarjeta</legend>
-          
-        <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
-        <input name="date"  type="text" placeholder="Fecha de vencimiento">
-        <input name="codigo" type="text" placeholder="CCV">
-        <br>
-        <p id ="isn'tValid"></p>
-      
-        <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
-     
-     </form>
-    </aside>
-
-    <div class="valid-card" id="tarjeta-valida"  >
-     <p id="isValid"> </p>
-     <button><a href="#formulario">Regresar</a></div></button>
-    </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap" rel="stylesheet">
     
-    <footer> Card Validation by Carol Marulanda & Ruby Álvarez</footer>
+  </head>
+   <body>
+     <header id="inicio">
+        <div class="logo">
+           <img src="../img/logo.jpg" width="50px">
+        </div>
+         <nav>
+            <div >
+              <a href="#inicio" class="menu">Inicio</a>
+              <a href="#quienes-somos" class="menu">Sobre nosotros</a>
+              <a href="#servicios" class="menu">Servicios</a>
+              <a href="#contacto" class="menu">Contacto</a>
+              <a href="#pagos" class="menu">Pagos</a>
+            </div>
+         </nav>
+      </header>
+      <main class="container" id="quienes-somos" >
+        <h1>Inmobiliaria C&R</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, facilis esse sequi nesciunt modi natus eveniet aut doloribus dolor consequatur nobis quisquam quis distinctio nihil molestiae dolorum magnam exercitationem placeat.
+          <br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus, sunt magnam quisquam iure ut blanditiis? Nisi id dicta aperiam molestiae reprehenderit, doloribus aliquid laudantium voluptatem? Tenetur perspiciatis quibusdam nihil!
+          </p>
+       </main>
+      <section class="container gallery" id="servicios" >
+        <img  src="../img/img 1.jpg">
+        <img  src="../img/img 2.jpg">
+        <img  src="../img/img 3.jpg">
+        <img  src="../img/img4.jpg">
+      </section>
+    <!--   <section class="contenedor-card-validation" id="pagos">
+          <div class="login">
+            <button id="agregar-tarjeta">Agregar Tarjeta</button>
+             
+          </div>
+        
+      </section>
+   -->   
+  <!-- <section class="contenedor-card-validation">
+         <form class="card-validation"  id="formulario" >
+            <legend>Agregar tarjeta</legend>
+            <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
+            <input name="date"  type="text" placeholder="Fecha de vencimiento">
+            <input name="codigo" type="text" placeholder="CCV">
+            <br>
+            <p id ="isn'tValid"></p>
+      
+            <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
+          </form>
+        </section> 
+   -->
+   <!--   <section>
+         <div class="valid-card" id="tarjeta-valida"  >
+            <p id="isValid"> </p>
+           <button><a href="#formulario">Regresar</a></div></button>
+         </div>
+      </section>
+    -->
+    <footer class="container" id="contacto">
+
+       
+        <div>
+          <h3>Card Validation by Carol Marulanda & Ruby Álvarez</h3>
+         <a href="#"></a> <i class="fab fa-instagram"></i>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </footer>
   
   <script src="index.js" type="module"></script>
 
