@@ -23,13 +23,14 @@ function getInput(){ // El formulario no se envia si cumple con las sgtes condic
 
   //FILTROS PARA NUMERO DE TARJETA
   if(creditCardNumber == ""){ // aqui evaluamos si el campo esta vacio
-    alert('El numero de tarjeta es obligatorio');
+    document.getElementById("tarjeta").textContent= "Este campo es obligatorio";
     // return -> romper el codigo
     return
   }
 
   if((creditCardNumber.length > 16) || (/\D/.test(creditCardNumber))  ){ // aqui validamos el rango de digitos ingresados y si los digitos ingresados son diferentes a numeros 
-    alert('Verifique la información ingresada {solo digitos[0-9]}');
+    document.getElementById("tarjeta").textContent= "Verifique los valores ingresados";
+    
     return 
   }
 
@@ -58,6 +59,7 @@ function getInput(){ // El formulario no se envia si cumple con las sgtes condic
 
 
 }  
+
 
 
 

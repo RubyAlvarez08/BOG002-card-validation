@@ -12,16 +12,16 @@
    <body>
      <header id="inicio">
         <div class="logo">
-           <img src="../img/logo.jpg" width="50px">
+           <h1>Titulo Principal</h1>
+           <p></p>
         </div>
          <nav>
-            <div >
               <a href="#inicio" class="menu">Inicio</a>
               <a href="#quienes-somos" class="menu">Sobre nosotros</a>
               <a href="#servicios" class="menu">Servicios</a>
               <a href="#contacto" class="menu">Contacto</a>
               <a href="#pagos" class="menu">Pagos</a>
-            </div>
+          
          </nav>
       </header>
       <main class="container" id="quienes-somos" >
@@ -37,44 +37,41 @@
         <img  src="../img/img 3.jpg">
         <img  src="../img/img4.jpg">
       </section>
-    <!--   <section class="contenedor-card-validation" id="pagos">
-          <div class="login">
-            <button id="agregar-tarjeta">Agregar Tarjeta</button>
-             
+      <section class="container" id="pagos">
+          <div class="contenedor-pagos card-validation">
+            <input placeholder="Nombre">
+            <input placeholder="Numero de cedula">
+            <a href="#" class="open-agregar-tarjeta">Agregar tarjeta </a>           
           </div>
-        
-      </section>
-   -->   
-  <!-- <section class="contenedor-card-validation">
-         <form class="card-validation"  id="formulario" >
-            <legend>Agregar tarjeta</legend>
-            <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
-            <input name="date"  type="text" placeholder="Fecha de vencimiento">
-            <input name="codigo" type="text" placeholder="CCV">
-            <br>
-            <p id ="isn'tValid"></p>
-      
-            <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
-          </form>
-        </section> 
-   -->
-   <!--   <section>
-         <div class="valid-card" id="tarjeta-valida"  >
-            <p id="isValid"> </p>
-           <button><a href="#formulario">Regresar</a></div></button>
-         </div>
-      </section>
-    -->
-    <footer class="container" id="contacto">
+       </section>
+      <footer class="container" id="contacto">
+            <div>
+            <h3>Card Validation by Carol Marulanda & Ruby Álvarez</h3>
+               <a href="#"></a> <i class="fab fa-instagram"></i>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+      </footer>
+      <div class="contenedor-pagos">
+      <form class="card-validation"  id="formulario" >
+         <legend>Agregar tarjeta</legend>
+         <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
+         <p id="tarjeta"></p>
+         <input name="date"  type="text" placeholder="Fecha de vencimiento">
+         <input name="codigo" type="text" placeholder="CCV">
+         <br>
+         <p id ="isn'tValid"></p>
+         <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
+      </form>
+    </div> 
 
-       
-        <div>
-          <h3>Card Validation by Carol Marulanda & Ruby Álvarez</h3>
-         <a href="#"></a> <i class="fab fa-instagram"></i>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
+     <div class="contenedor-pagos">
+      <div class="valid-card " id="tarjeta-valida"  >
+         <p id="isValid"> </p>
+        <button><a href="#formulario">Regresar</a></div></button>
       </div>
-    </footer>
+    </div>
+ 
   
   <script src="index.js" type="module"></script>
 
