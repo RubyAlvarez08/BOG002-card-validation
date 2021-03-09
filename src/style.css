@@ -104,9 +104,11 @@ background-image:linear-gradient(to left, hsla(210, 30%, 24%, 0.808), hsla(204, 
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
-position: relative;
-
-
+display: block;
+flex-direction: wrap;
+justify-content: center;
+align-items: center;
+ 
 }
 
   /* A  partir de aqui va el codigo para las ventanas de validacion de la tarjeta */
@@ -197,10 +199,13 @@ form{
 }
 
 .img-footer {
-   margin: 0%;
-   padding: 0%;
-   width: 15px;
-   display:inline-flex;
+  width: 20%;
+   text-align: center;
+  
+   display: inline-flex;
+   flex-direction: wrap;
+   justify-content: center;
+   align-items: center;
 
  
   
