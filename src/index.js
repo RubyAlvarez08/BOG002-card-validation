@@ -46,9 +46,9 @@ function getInput(){
   }
  
 
-  recibirNumero.addEventListener('click',siValid());
+  recibirNumero.addEventListener('click',siValido());
 
-  function siValid(){
+  function siValido(){
     if(validator.isValid(creditCardNumber) == true){
       
       const valida = document.getElementById("isValid");

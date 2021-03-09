@@ -106,16 +106,8 @@ background-position: center;
 background-attachment: fixed;
 position: relative;
 
-
-  
-
 }
-legend{
-  color: #ffffff;
-  font-family: fantasy;
-  font-size: 20px;
-  vertical-align: bottom;
-}
+
   /* A  partir de aqui va el codigo para las ventanas de validacion de la tarjeta */
 
 
@@ -189,7 +181,19 @@ form{
   transform: translateY(0%);
 }
 
-
+.modal-close{
+  transform: translateY(-200%);
+}
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: black;
+  cursor: pointer;
+}
 
 
 
