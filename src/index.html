@@ -12,10 +12,11 @@
    <body>
      <header id="inicio">
         <div class="logo">
-           <h1>Titulo Principal</h1>
+           <h1>Inmobiliaria C & R</h1>
            <p></p>
         </div>
          <nav>
+         <br> 
               <a href="#inicio" class="menu">Inicio</a>
               <a href="#quienes-somos" class="menu">Sobre nosotros</a>
               <a href="#servicios" class="menu">Servicios</a>
@@ -46,12 +47,29 @@
        </section>
       <footer class="container" id="contacto">
             <div>
-            <h3>Card Validation by Carol Marulanda & Ruby Álvarez</h3>
+             <h3>Card Validation by Carol Marulanda & Ruby Álvarez</h3>
+             <img src="../img/Whatsapp.jpg"  alt="" >
+             <img src="../img/facebook.jpg" alt="">
+             <img src="../img/instagram.jpg" alt="">
+             <img src="../img/twitter.jpg" alt="">
                <a href="#"></a> <i class="fab fa-instagram"></i>
                <a href="#"><i class="fab fa-twitter"></i></a>
                <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
       </footer>
+             
+      <div class="contenedor-pagos">
+      <form class="card-validation"  id="formulario" >
+         <legend>Agregar tarjeta</legend>
+         <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
+         <p id="tarjeta"></p>
+         <input name="date"  type="text" placeholder="Fecha de vencimiento">
+         <input name="codigo" type="text" placeholder="CCV">
+         <br>
+         <p id ="isn'tValid"></p>
+         <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
+      </form>
+    </div> 
 
         <!--Ventanas Modal-->
 
