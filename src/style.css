@@ -83,11 +83,7 @@ main p{
 footer{
 width: 100%;
 height: 80vh;
-background-repeat: no-repeat; 
 background-image:linear-gradient(to left, hsla(210, 30%, 24%, 0.808), hsla(204, 64%, 44%, 0.575));
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
 display: block;
 flex-direction: wrap;
 justify-content: center;
@@ -131,7 +127,7 @@ l
   font-size: 12px;
   cursor: pointer;
 }
-.modal-isValid{
+.modal-padre{
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -152,9 +148,9 @@ form{
   display: block;
   text-align: center;
   align-items: center;
-  z-index: 1;
+
 }
- .valid-card{
+ .modal-hijo{
   width: 40%;
   height: 50%;
   background: rgb(3, 27, 37);
@@ -164,7 +160,7 @@ form{
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
-  transition: transform 2s;
+  transition: transform 1s;
   transform: translateY(0%);
 }
 
@@ -182,14 +178,13 @@ form{
   cursor: pointer;
 }
 
-.img-footer {
-  width: 20%;
-   text-align: center;
-  
-   display: inline-flex;
-   flex-direction: wrap;
-   justify-content: center;
-   align-items: center;
+ footer.img-footer {
+  width: 5%;
+  height: 10%;
+  display: inline-flex;
+  flex-direction: wrap;
+  justify-content: center;
+  align-items: center;
 
  
   
