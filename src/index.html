@@ -41,7 +41,7 @@
           <div class="contenedor-pagos card-validation">
             <input placeholder="Nombre">
             <input placeholder="Numero de cedula">
-            <a href="#" class="open-agregar-tarjeta">Agregar tarjeta </a>           
+            <button id="agregar-tarjeta">Agregar tarjeta </button>           
           </div>
        </section>
       <footer class="container" id="contacto">
@@ -52,26 +52,33 @@
                <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
       </footer>
-      <div class="contenedor-pagos">
-      <form class="card-validation"  id="formulario" >
-         <legend>Agregar tarjeta</legend>
-         <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
-         <p id="tarjeta"></p>
-         <input name="date"  type="text" placeholder="Fecha de vencimiento">
-         <input name="codigo" type="text" placeholder="CCV">
-         <br>
-         <p id ="isn'tValid"></p>
-         <button type="button" id='button' value='Validar'><a href="#tarjeta-valida"></a></button>
-      </form>
-    </div> 
 
-     <div class="contenedor-pagos">
-      <div class="valid-card " id="tarjeta-valida"  >
-         <p id="isValid"> </p>
-        <button><a href="#formulario">Regresar</a></div></button>
+        <!--Ventanas Modal-->
+
+      <div class="modal-isValid" id="isValid">
+        
+           <form class="valid-card modal-close">
+            <p class="close">X</p>
+            <legend>Agregar tarjeta</legend>
+              <input name="creditCardNumber" id="numCard" type="text" placeholder="Numero de Tarjeta">
+              <p id="tarjeta" ></p>
+             <input name="date"  type="text" placeholder="Fecha de vencimiento">
+             <input name="codigo" type="text" placeholder="CCV">
+             <br>
+             <p id="isn'tValid" ></p>
+             <button type="button" name="validar" id='button'>Validar</button>
+           </form>
+       </div> 
+   
+ <!-- <div class="modal-isValid">
+      
+      <div class="valid-card  modal-close"  id="isValid">
+         <p class="close">X</p>
+        
+        <button>Pagar</button>
       </div>
     </div>
- 
+  -->
   
   <script src="index.js" type="module"></script>
 
