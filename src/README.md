@@ -2,7 +2,7 @@
 
 Esta dirigido a los usuarios de la inmobiliaria que desean realizar los pagos de su arrendamiento en linea y puedan verificar que su tarjeta sea valida.
 
-![Proyecto Final](http://127.0.0.1:5500/src/index.html)
+[Proyecto Final](http://127.0.0.1:5500/src/index.html)
 
 ### USUARIOS Y OBJETIVOS
 Los usuarios son las personas que tienen una propiedad vinculada a la inmobiliaria.
