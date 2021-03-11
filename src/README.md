@@ -21,7 +21,7 @@ Al implementar el pago de su canon a traves de la pagina de la inmobiliaria, gen
 
 
 ## PROTOTIPO FINAL
-
+![prototipo Final](../img/card-validation.png)
 
 
 
