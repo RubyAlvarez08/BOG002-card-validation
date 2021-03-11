@@ -39,7 +39,7 @@ const validator = { // Es un objeto con el cual podemos agrupar funciones
            suma = suma + arrayFinal[j];
            
            }
-          // console.log(suma);
+           console.log(suma);
 
            if (suma %10 == 0){
               return true;
