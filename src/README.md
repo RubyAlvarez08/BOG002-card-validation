@@ -2,7 +2,7 @@
 
 Esta dirigido a los usuarios de la inmobiliaria que desean realizar los pagos de su arrendamiento en linea y puedan verificar que su tarjeta sea valida.
 
-[Proyecto Final](http://127.0.0.1:5500/src/index.html)
+[Proyecto Final](http://127.0.0.1:5501/BOG002-card-validation/src/index.html)
 ![Prototipo](../img/prototipo_final.jpg)
 
 ### USUARIOS Y OBJETIVOS
