@@ -40,8 +40,10 @@ nav{
   position:fixed;
   top: 0%;
   right: 0%;
-  
- 
+}
+
+a{
+  color:aqua
 }
 .container{
   width: 100%;
